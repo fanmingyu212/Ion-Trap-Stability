@@ -1,4 +1,4 @@
-from TrapDimension import TrapDimension
+from Trap.TrapDimension import TrapDimension
 from Fields.Field2D import Field2D
 import numpy as _n
 import scipy.constants as _c
@@ -23,7 +23,7 @@ class TrapWithPotential(object):
             self.v_biases = v_biases
 
     def _get_v_rf(self, t):
-        return self.v_rf * (_n.cos(self.omega * t + self.phase) + 1)
+        return self.v_rf * _n.cos(self.omega * t + self.phase)
 
     def _get_v_diffs(self, t):
         v_rf_now = self._get_v_rf(t)

@@ -1,4 +1,4 @@
-from PointCharge import PointCharge
+from Ions.PointCharge import PointCharge
 
 class Sr88Ion(PointCharge):
     def __init__(self):
